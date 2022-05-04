@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-smooth: always;
 }
 
 .btn-brand {
-  @apply bg-brand-500 drop-shadow-default text-white px-3 h-12 rounded-full flex items-center hover:bg-brand-300 transition-colors;
+  @apply bg-brand-500 drop-shadow-default text-white px-3 h-12 rounded-full flex items-center hover:brightness-90 transition-colors;
+}
+.focus-forms {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500;
 }

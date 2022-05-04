@@ -5,9 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        main: {
+          100: "#495057",
+          200: "#FFFAF1",
+          300: "#DCE9E2",
+          500: "#00856F",
+        },
         brand: {
           300: "#996DFF",
-          500: "#8257E5",
+          500: "#00856F",
         }
       },
       dropShadow: {
@@ -15,5 +21,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
+  ],
 }
