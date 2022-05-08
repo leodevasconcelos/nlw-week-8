@@ -5,7 +5,7 @@ import bodyParser from 'body-parser'
 
 const app = express();
 
-app.use(bodyParser.json({ limit: '2mb' }))
+app.use(bodyParser.json({ limit: '10mb' }))
 app.use(cors(
     { origin: '*' }
 ));
