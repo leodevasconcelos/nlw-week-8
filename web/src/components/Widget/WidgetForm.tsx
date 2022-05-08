@@ -5,10 +5,12 @@ import { useState } from "react";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
 import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
+import { Footer } from "./Footer";
 
 export const feedbackTypes = {
   BUG: {
     label: "Problema",
+    descriprion: "Envie um problema que está acontecendo",
     icon: {
       src: iconBug,
       alt: "Icone de um problema",
@@ -16,6 +18,7 @@ export const feedbackTypes = {
   },
   IDEA: {
     label: "Ideia",
+    descriprion: "Envie uma ideia que pode nos ajudar",
     icon: {
       src: iconIdea,
       alt: "Icone de ideia",
@@ -23,6 +26,7 @@ export const feedbackTypes = {
   },
   OTHER: {
     label: "Outro",
+    descriprion: "Envie alguma outra coisa que você queira",
     icon: {
       src: iconOther,
       alt: "Icone de outro",
@@ -58,9 +62,7 @@ export function WidgetForm() {
           )}
         </>
       ) }
-      <footer className="flex justify-center text-xs font-medium">
-        <p>Feito com ♥ por <a className="underline underline-offset-2" href="https://github.com/leodevasconcelos">Rocketseat</a></p>
-      </footer>
+      <Footer/>
     </>
   )
   

@@ -11,8 +11,11 @@ body {
 }
 
 .btn-brand {
-  @apply bg-brand-500 drop-shadow-default text-white px-3 h-12 rounded-full flex items-center hover:brightness-90 transition-colors;
+  @apply bg-brand-500 drop-shadow-default text-white px-3 h-12 rounded-full flex items-center hover:bg-brand_alt-900 transition-colors;
 }
 .focus-forms {
-  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-zinc-900 focus:ring-brand-500;
+}
+.navgation-btn {
+  @apply absolute text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100;
 }

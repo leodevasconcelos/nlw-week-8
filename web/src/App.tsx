@@ -1,5 +1,6 @@
 import { Home } from './components/Home';
 import {Widget} from './components/Widget/Index';
+
 function App() {
 
   return (

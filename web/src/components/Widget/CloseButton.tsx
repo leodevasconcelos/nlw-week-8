@@ -3,10 +3,8 @@ import { X } from "phosphor-react";
 
 export function CloseButton() {
   return (
-    <Popover.Button className="absolute top-5 right-5 text-zinc-400 hover:text-zinc-100">
-      <button type="button">
+    <Popover.Button className="top-5 right-5 navgation-btn" title="Fechar">
         <X className="w-4 h-4" weight="bold" />
-      </button>
     </Popover.Button>
   );
 }

@@ -24,12 +24,12 @@ export function ScreenshotButton({
 
   if (screenshot) {
     return (
-      <button type="button" className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 hover:transition-colors"
+      <button title="Remover captura de tela" type="button" className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 hover:transition-colors"
       onClick={() => onScreenshotTaken(null)}
       style={{
         backgroundImage: `url(${screenshot})`,
       }}>
-        <Trash/>
+        <Trash className="text-main-500 w-4 h-4" weight="bold"/>
       </button>
     )
   }
@@ -37,7 +37,8 @@ export function ScreenshotButton({
   return (
     <button type="button" 
       onClick={handleTakeScreenshot}
-      className="p-2 bg-zinc-800 focus-forms rounded-[4px] border-trannsparent hover:bg-zinc-700 transition-colors text-zinc-100">
+      title="Fazer captura da tela"
+      className="p-2 bg-zinc-100 dark:bg-zinc-800 focus-forms rounded-[4px] border-trannsparent hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors text-zinc-800 dark:text-zinc-100">
       { isTakingScreenshot ? <Loading /> : <Camera className="w-6 h-6"/> }
     </button>
   )
