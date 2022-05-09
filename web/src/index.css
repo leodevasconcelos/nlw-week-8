@@ -19,3 +19,19 @@ body {
 .navgation-btn {
   @apply absolute text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100;
 }
+.main-menu li {
+  @apply text-brand-100 md:text-brand-500 md:opacity-70 md:hover:opacity-100 hover:border-b-2 md:hover:border-brand-500;
+}
+.scroll-down .main-menu li {
+  @apply text-brand-100 hover:border-b-2 md:hover:border-brand-100;
+}
+.main-menu li:nth-child(1) {
+  @apply border-b-2 border-brand-500 text-brand-100 md:text-brand-500 opacity-100;
+}
+.scroll-down .main-menu li:nth-child(1) {
+  @apply md:border-b-2 md:border-white md:text-white;
+}
+.brand-footer svg {
+  width: 256px;
+  height: -webkit-fill-available
+}
