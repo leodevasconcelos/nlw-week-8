@@ -3,7 +3,7 @@ import { Facebook, Instagram, YouTube } from "./Social";
 
 export function Footer() {
   return (
-    <footer className="bg-brand_alt-900 py-20">
+    <footer className="bg-brand-500 py-20">
       <div className="container px-4">
         <div className="flex flex-col md:flex-row md:justify-between gap-10 text-white">
           <div className="brand-footer">
