@@ -2,7 +2,7 @@ import about from '../../assets/images/sobre.png';
 
 export function About() {
   return (
-    <section className="bg-brand_alt-500">
+    <section id="sobre" className="bg-brand_alt-500">
       <div className="container px-4">
         <div className="gap-10 flex flex-col-reverse md:flex-row md:items-center py-24 md:py-40">
           <div>

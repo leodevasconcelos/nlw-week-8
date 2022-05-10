@@ -3,7 +3,7 @@ import { ButtonDefault } from "./Buttons"
 
 export function Hero() {
   return (
-    <section className="bg-brand-200">
+    <section id="home" className="bg-brand-200">
       <div className="container px-4">
         <div className="md:flex pb-40 md:pb-0">
           <div className="w-full mb-14 flex flex-col items-center md:items-start md:justify-center">
